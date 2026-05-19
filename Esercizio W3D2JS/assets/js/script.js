@@ -26,19 +26,18 @@ function aggiungiTask(testo, priorita ) {
   lista.appendChild(li);
   aggiornaContatore();
 }
-
-
+  
 
 function aggiornaContatore() {
   const tasks = lista.querySelectorAll("li");
   contatore.textContent = tasks.length;
 }
 
-aggiungiTask("Pagare le bollette", "alta");
-aggiungiTask("Studiare JavaScript", "media");
-aggiungiTask("Comprare il pane", "bassa");
-aggiungiTask("Chiamare il dentista", "alta");
-aggiungiTask("Riposarsi", "bassa");
+aggiungiTask("Pagare le bollette", "ALTA");
+aggiungiTask("Studiare JavaScript", "MEDIA");
+aggiungiTask("Comprare il pane", "BASSA");
+aggiungiTask("Chiamare il dentista", "ALTA");
+aggiungiTask("Riposarsi", "BASSA");
 
 
 
