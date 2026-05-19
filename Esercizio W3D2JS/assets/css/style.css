@@ -80,7 +80,10 @@ li {
 }
 .data{
   font-size: 12px;
-  color: #888;
+  color: #fdfdfd;
+  float: right;
+  transform: translateX(-10%);
+  
 }
 .evidenziato {
 

@@ -25,13 +25,32 @@ function aggiungiTask(testo, priorita ) {
   li.classList.add("priorita-" + priorita);
   lista.appendChild(li);
   aggiornaContatore();
-}
+  data = formatData();
+  const dataElement = document.createElement("span");
+  dataElement.classList.add("data");
+  dataElement.textContent = data;
+  li.appendChild(dataElement);
   
+  
+ 
+}
+  function formatData() {
+  return new Date().toLocaleString("it-IT", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+  });
+}
 
 function aggiornaContatore() {
   const tasks = lista.querySelectorAll("li");
   contatore.textContent = tasks.length;
 }
+
+
 
 aggiungiTask("Pagare le bollette", "ALTA");
 aggiungiTask("Studiare JavaScript", "MEDIA");
