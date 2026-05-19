@@ -30,10 +30,11 @@ function aggiungiTask(testo, priorita ) {
   dataElement.classList.add("data");
   dataElement.textContent = data;
   li.appendChild(dataElement);
-  
-  
- 
 }
+
+
+
+
   function formatData() {
   return new Date().toLocaleString("it-IT", {
     day: "2-digit",

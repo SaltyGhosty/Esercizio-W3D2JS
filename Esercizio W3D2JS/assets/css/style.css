@@ -54,15 +54,15 @@ li {
 }
 
 .priorita-ALTA {
-    background-color: red;
+    background-color: #FDE2E2;
 }
 
 .priorita-MEDIA {
-  background-color: orange;
+  background-color:  #FFFBE6;
 }
 
 .priorita-BASSA {
-  background-color: green;
+  background-color: #E2F5E2;
 }
 
 
